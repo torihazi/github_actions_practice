@@ -9,7 +9,7 @@ jobs:
         run: echo "::error file=app.js,line=1,col=1::Missing semicolon"
       - name: Setting a Warning Message
         run: echo "::warning file=app.js,line=1,col=1::Missing semicolon"
-      - name: Setting an Annotation
-        run: echo "::annotation file=app.js,line=1,col=1::Missing semicolon"
+      - name: Setting a Notice Message
+        run: echo "::notice file=app.js,line=1,col=1::Missing semicolon"
       - name: Setting a Debug Message
         run: echo "::debug file=app.js,line=1,col=1 ::Missing semicolon"
