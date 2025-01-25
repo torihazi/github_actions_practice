@@ -1,0 +1,19 @@
+name: Working Directory Commands
+on: [push]
+
+jobs:
+  working-dir-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Working Directory
+        run: |
+          pwd
+          echo $GITHUB_SHA
+          echo $GITHUB_WORKFLOW
+          echo $GITHUB_RUN_ID
+          echo $GITHUB_RUN_ATTEMPT
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKFLOW_DISPATCH_EVENT
+          echo $GITHUB_WORKFLOW_DISPATCH_EVENT_PATH
+          echo $GITHUB_WORKFLOW_DISPATCH_EVENT_PAYLOAD
+          echo $GITHUB_WORKFLOW_DISPATCH_EVENT_PAYLOAD_PATH
